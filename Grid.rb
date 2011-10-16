@@ -27,6 +27,11 @@ class Grid
         @grid[pos1[0]][pos1[1]] = nil
     end
 
+    def addPiece(piece, pos)
+        #method to place a piece onto the board
+        #piece: piece object
+        #pos: string in AN notation, position piece will be placed on (must be empty)
+        @grid[pos[0]][pos[1]] = piece
+    end
+
 end
-
-
