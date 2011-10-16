@@ -18,6 +18,15 @@ class Grid
             end
         end
     end
+
+    def move(pos1, pos2)
+        #method to move a piece from one position to the other
+        #pos1: string in AN notation, first position (contains piece)
+        #pos2: string in AN notation, second position (must be empty)
+        @grid[pos2[0]][pos2[1]] = @grid[pos1[0]][pos1[1]]
+        @grid[pos1[0]][pos1[1]] = nil
+    end
+
 end
 
 
